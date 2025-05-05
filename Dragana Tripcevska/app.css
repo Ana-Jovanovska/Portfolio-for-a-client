@@ -13,6 +13,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* HEADER */
+
 header {
   background-color: #1e201e;
   display: grid;
@@ -20,84 +22,52 @@ header {
   align-items: center;
   padding: 10px;
 }
-
 .logo-header img {
   width: 50px;
   height: 47px;
 }
-
 nav ul {
   list-style: none;
 }
-
 nav ul li {
   display: inline;
   margin: 0 15px;
 }
-
 nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 25px;
 }
 
-/*.hero {
-  background-color: #ddd;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-*/
+/* Hero container */
 
 .hero img {
   width: 100%;
   height: 100%;
 }
-
 .hero-content-mob img {
   display: none;
 }
 
-.cards h2 {
-  font-weight: bolder;
-  font-size: 30px;
-  text-align: center;
-}
-
-.cards,
-.circles,
-.large-card {
-  text-align: left;
-  margin: 50px 0;
-}
-
-.card-header h2 {
-  margin-bottom: 100px;
-}
+/* All card container and slide card */
 
 .slider-container {
   position: relative;
   width: 1300px;
   left: 110px;
 }
-
 .slider-wrapper {
   overflow-x: hidden;
   padding: 20px;
 }
-
 .slider {
   width: max-content;
 }
-
 .card-container {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
 .card {
   width: 400px;
   background: #1c1c1c;
@@ -106,24 +76,20 @@ nav ul li a {
   color: white;
   text-align: center;
 }
-
 .card-image img {
   width: 100%;
   height: 220px;
   border-radius: 10px;
 }
-
 h2 {
-  font-weight: bolder;
-  font-size: 30px;
+  font-size: 27px;
   text-align: center;
+  margin-bottom: 90px;
 }
-
 small {
   color: #aaa;
   font-size: 10px;
 }
-
 .card p {
   flex-grow: 1;
   font-size: 13px;
@@ -133,20 +99,17 @@ small {
   white-space: normal;
   word-wrap: break-word;
 }
-
 .button-container button {
   width: 100px;
   height: 35px;
   border-radius: 10px;
   margin-top: 40px;
 }
-
 .button-container button a {
   text-decoration: none;
   color: #1c1c1c;
   background-color: white;
 }
-
 .buttons {
   position: absolute;
   top: 100%;
@@ -157,7 +120,6 @@ small {
   z-index: 10;
   pointer-events: none;
 }
-
 .buttons button {
   background: rgba(0, 0, 0, 0.6);
   color: white;
@@ -168,24 +130,20 @@ small {
   transition: 0.3s;
   pointer-events: auto;
 }
-
 .buttons button:hover {
   background: black;
   color: white;
 }
-
 .left {
   position: absolute;
   left: -80px;
   bottom: 200px;
 }
-
 .right {
   position: absolute;
   right: -90px;
   bottom: 200px;
 }
-
 .swipe-card p {
   font-size: 15px;
   line-height: 1.6;
@@ -196,7 +154,6 @@ small {
   animation: bounce 2s infinite alternate;
   padding-bottom: 150px;
 }
-
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -209,18 +166,18 @@ small {
   }
 }
 
+/* CIRCLE BUTTON */
+
 .circles {
   background-color: white;
   padding: 0;
 }
-
 .circle-container {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-bottom: 100px;
 }
-
 .circle a {
   width: 80px;
   height: 80px;
@@ -239,12 +196,13 @@ small {
   transform: translateY(-5px);
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 }
-
 button.circle {
   border: none;
   outline: none;
   background: none;
 }
+
+/* ABOUT US */
 
 .large-card-content {
   display: flex;
@@ -253,22 +211,27 @@ button.circle {
   align-items: center;
   padding: 20px;
 }
-
 .large-card h2 {
-  font-weight: bolder;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.large-card {
+  text-align: left;
+  margin: 50px 0;
 }
 
 .text {
   width: 300px;
   text-align: left;
 }
-
 .large-card-content img {
   width: 20%;
   height: 30%;
 }
+
+/* FOOTER */
 
 footer {
   background-color: #1e201e;
@@ -280,28 +243,23 @@ footer {
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
 }
-
 .logo-footer-small img {
   display: none;
 }
-
 .logo-footer {
   text-align: center;
   padding-left: 170px;
   padding-top: 25px;
 }
-
 .logo-footer img {
   width: 402px;
   height: 67px;
 }
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
 }
-
 .info {
   text-align: left;
   padding-right: 170px;
@@ -311,70 +269,69 @@ footer {
 /* Response for mobile */
 
 @media only screen and (max-width: 430px) {
+  /* Card slide button response for mobile */
+
   .slider-container {
     width: 385px;
     left: 30px;
   }
-
   .slider-wrapper {
     padding: 0;
   }
-
-  .card-header h2 {
-    margin-bottom: 70px;
-  }
-
   .left {
     left: -40px;
     bottom: 200px;
     width: 45px;
   }
-
   .right {
     left: 375px;
     bottom: 200px;
     width: 45px;
   }
 
+  /* Big card response for mobile */
+
+  .card-header h2 {
+    font-size: 22px;
+    margin-bottom: 70px;
+  }
   .card {
     width: 380px;
   }
-
   .buttons button {
     background: none;
     color: black;
   }
-
   .buttons button:hover {
     background: none;
     color: black;
   }
-
   .card-container {
     padding: 0px;
   }
-
-  .hero img {
-    display: none;
-  }
-
-  .hero-content-mob img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-
   .card-image img {
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
   }
 
+  /* Hero content response for mobile */
+
+  .hero img {
+    display: none;
+  }
+  .hero-content-mob img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Header response for mobile */
+
   .logo-header img {
     width: 40px;
     height: 37px;
   }
-
   nav ul li a {
     text-decoration: none;
     color: white;
@@ -382,12 +339,13 @@ footer {
     font-size: 22px;
   }
 
+  /* Circle link button response for mobile */
+
   .circle {
     width: 85px;
     height: 40px;
     font-size: 22px;
   }
-
   .circle a {
     width: 80px;
     height: 80px;
@@ -402,45 +360,42 @@ footer {
     text-decoration: none;
   }
 
-  .large-card h2 {
-    font-size: 18px;
-  }
+  /* About me card response for mobile */
 
+  .large-card h2 {
+    font-size: 22px;
+  }
   .large-card-content {
     flex-direction: column;
   }
-
   .large-card-content img {
     width: 35%;
     height: 40%;
   }
-
   .text {
     width: 300px;
     text-align: left;
     font-size: 14px;
   }
 
+  /* Footer response for mobile */
+
   footer {
     grid-template-columns: 1fr;
   }
-
   .logo-footer {
     display: none;
   }
-
   .logo-footer-small img {
     display: block;
     margin-bottom: 10px;
   }
-
   .footer-content {
     flex-direction: column;
     align-items: left;
     padding: 30px 0;
     padding-left: 50px;
   }
-
   .info {
     padding-right: 0;
     padding-left: 0px;
